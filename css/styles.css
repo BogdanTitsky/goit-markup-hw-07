@@ -355,6 +355,7 @@ img {
     position: fixed;
     width: 100%;
     height: 100%;
+    z-index: 10;
 
     top: 0;
     left: 0;
@@ -834,6 +835,10 @@ img {
     justify-content: center;
 }
 
+.footer-left {
+    text-align: center;
+}
+
 .logo-footer {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -852,6 +857,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--color-cornflower);
     width: 264px;
+    text-align: left;
 }
 
 .logo-sufix-footer {
@@ -996,7 +1002,12 @@ img {
 /* ?----------------------PORTFOLIO---------------------- */
 
 .portfolio-section {
-    padding: 96px 0 120px;
+    /* padding: 96px 0 120px; */
+    padding: 48px 0;
+}
+
+.portfolio-container {
+    max-width: 396px;
 }
 
 .portfolio-title {
@@ -1004,14 +1015,17 @@ img {
 }
 
 .btn-list {
-    margin-bottom: 72px;
+    width: 280px;
+    margin-bottom: 48px;
+    /* margin-bottom: 72px; */
     display: flex;
-    gap: 24px;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px 24px;
 }
 
 .portfolio-btn-list-item {
-    padding: 12px 24px 12px 24px;
+    padding: 8px 16px;
+
     background: var(--color-cloud);
     border: 1px solid var(--color-cornflower);
     border-radius: 4px;
@@ -1045,7 +1059,7 @@ img {
 }
 
 .portfolio-list-item {
-    width: calc((100% - 2 * 24px) / 3);
+    width: 396px;
 }
 
 .portfolio-list-item-link {
@@ -1063,6 +1077,10 @@ img {
 .portfolio-list-item-img-wrap {
     position: relative;
     overflow: hidden;
+}
+
+.portfolio-list-item-img-wrap > img {
+    width: 100%;
 }
 
 .portfolio-list-item:hover .portfolio-list-item-overlay {
