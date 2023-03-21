@@ -262,8 +262,18 @@ img {
     align-items: center;
 }
 
+.order-form-privacy-policy span {
+    padding-left: 24px;
+}
+
 .order-form-privacy-policy::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
     content: '';
+
     display: block;
     cursor: pointer;
 
@@ -272,8 +282,6 @@ img {
 
     border: 1px solid var(--color-navy-blue);
     border-radius: 2px;
-
-    margin-right: 8px;
 }
 
 .order-form-privacy-policy .privacy-policy {
