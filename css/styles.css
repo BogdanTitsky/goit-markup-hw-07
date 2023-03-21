@@ -362,7 +362,8 @@ img {
 
     padding: 80px 0 40px;
 
-    display: none;
+    transform: translateX(100%);
+    transition: transform var(--time-duration) var(--time-distribution);
 }
 
 .menu.is-open {
